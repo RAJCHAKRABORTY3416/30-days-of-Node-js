@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSocket Example</title>
+</head>
+<body>
+  <h1>WebSocket Chat</h1>
+  <input type="text" id="message" placeholder="Enter message">
+  <button onclick="sendMessage()">Send</button>
+  <div id="messages"></div>
+
+  <script>
+    const ws = new WebSocket('ws://localhost:3000/websocket');
+
+    ws.onopen = () => {
+      console.log('WebSocket connection opened!');
+      // Now it's safe to send messages
+    };
+
+    function sendMessage() {
+      const message = document.getElementById('message').value;
+      ws.send(message);
+      document.getElementById('message').value = '';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scaler</title>
+</head>
+<body>
+  <h1>Day 28 of Scaler Discord Challange</h1>
+  <div id="editor-content"></div>
+  <script>
+    const socket = new WebSocket('ws://localhost:3000');
+
+    socket.onopen = () => {
+      console.log('Connected to WebSocket server');
+    };
+
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      document.getElementById('editor-content').textContent = data.sessionData.content;
+    };
+
+  </script>
+</body>
+</html>
