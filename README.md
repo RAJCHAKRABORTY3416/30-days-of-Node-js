@@ -22,7 +22,7 @@
 </p>
 
 <div align="center">
-<img src="https://img.shields.io/badge/Wave-Bot-blue" alt="Telegram Bot"/>
+<img src="https://img.shields.io/badge/Node-js-blue" alt="Telegram Bot"/>
 <img src="https://img.shields.io/github/contributors/RAJCHAKRABORTY3416/CN-world-cup?color=dark-green" alt="CN Badge"/>
 <img src="https://img.shields.io/static/v1?label=%E2%AD%90&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
 <a href="https://github.com/kishanrajput23" ><img src="https://img.shields.io/badge/Contributions-welcome-green.svg?style=flat&logo=github" alt="Contributions" /></a>
